@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  background-color: #0D1117;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 1.25rem;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50rem;
+  overflow: hidden;
+  height: auto;
+  gap: 1.25rem;
+}
+
+.slider__items-cover{
+  order: 1;
+  width: 100%;
+  height: auto;
+}
+
+.slider__items {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.slider__dot{
+  display: none;
+}
+
+.slider__item {
+  display: flex;
+  width: 25%;
+  transition: 0.7s;
+}
+
+
+.slider__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+/* Controls */
+
+.slider__controls {
+  display: flex;
+  order: 3;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+
+.slider__buton-cover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.slider__button{
+  width: 0.875rem;
+  height: 0.875rem;
+  border: 0.16rem solid #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_1:checked ~  .slider__controls .slider__buton-cover:nth-child(1) .slider__button:after{
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2) .slider__button:after{
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3) .slider__button:after{
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4) .slider__button:after{
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.slider__buton-cover:hover .slider__button {
+  border: 0.16rem solid #fff;
+}
+
+.slider__buton-cover:hover .slider__button:after {
+  background-color: #fff;
+}
+
+.button_1:checked ~ .slider__controls .slider__buton-cover:nth-child(1):hover .slider__button:after{
+  background-color: #fff;
+}
+
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2):hover .slider__button:after{
+  background-color: #fff;
+}
+
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3):hover .slider__button:after{
+  background-color: #fff;
+}
+
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4):hover .slider__button:after{
+  background-color: #fff;
+}
+
+/*Mems*/
+
+.slider__mems-cover {
+  order: 2;
+  display:block ;
+  max-width: 31.25rem;
+  overflow: hidden;
+}
+
+.slider__mems {
+  display: flex;
+  width: 400%;
+  flex-direction: row;
+}
+
+.slider__mem {
+  width: 25%;
+  transition: 0.7s;
+}
+
+.mem__text {
+  font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* MAGIC */
+
+
+.button_1:checked ~ .slider__items-cover .slider__items .slider__item-1 {
+  margin-left: 0;
+}
+
+.button_2:checked ~ .slider__items-cover .slider__items .slider__item-1 {
+  margin-left: -25%;
+}
+
+.button_3:checked ~ .slider__items-cover .slider__items .slider__item-1 {
+  margin-left: -50%;
+}
+
+.button_4:checked ~ .slider__items-cover .slider__items .slider__item-1 {
+  margin-left: -75%;
+}
+
+.button_1:checked ~ .slider__mems-cover .slider__mems .slider__mem-1 {
+  margin-left: 0;
+}
+
+.button_2:checked ~ .slider__mems-cover .slider__mems .slider__mem-1 {
+  margin-left: -25%;
+}
+
+.button_3:checked ~ .slider__mems-cover .slider__mems .slider__mem-1 {
+  margin-left: -50%;
+}
+
+.button_4:checked ~ .slider__mems-cover .slider__mems .slider__mem-1 {
+  margin-left: -75%;
+}
