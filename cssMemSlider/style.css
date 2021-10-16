@@ -56,7 +56,6 @@ body{
 .slider__image {
   max-width: 100%;
   height: auto;
-  object-fit: fill;
 }
 
 /* Controls */
@@ -90,67 +89,39 @@ body{
   justify-content: center;
 }
 
-.button_1:checked ~  .slider__controls .slider__buton-cover:nth-child(1) .slider__button:after{
-  content: "";
-  display: block;
-  width: 0.75rem;
-  height: 0.75rem;
+.button_1:checked ~  .slider__controls .slider__buton-cover:nth-child(1) .slider__button{
   background-color: #71ABFF;
-  border-radius: 50%;
-  transition: all 0.25s ease-in-out;
 }
 
-.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2) .slider__button:after{
-  content: "";
-  display: block;
-  width: 0.75rem;
-  height: 0.75rem;
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2) .slider__button{
   background-color: #71ABFF;
-  border-radius: 50%;
-  transition: all 0.25s ease-in-out;
 }
 
-.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3) .slider__button:after{
-  content: "";
-  display: block;
-  width: 0.75rem;
-  height: 0.75rem;
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3) .slider__button{
   background-color: #71ABFF;
-  border-radius: 50%;
-  transition: all 0.25s ease-in-out;
 }
 
-.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4) .slider__button:after{
-  content: "";
-  display: block;
-  width: 0.75rem;
-  height: 0.75rem;
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4) .slider__button{
   background-color: #71ABFF;
-  border-radius: 50%;
-  transition: all 0.25s ease-in-out;
 }
 
 .slider__buton-cover:hover .slider__button {
   border: 0.16rem solid #fff;
 }
 
-.slider__buton-cover:hover .slider__button:after {
+.button_1:checked ~ .slider__controls .slider__buton-cover:nth-child(1):hover .slider__button{
   background-color: #fff;
 }
 
-.button_1:checked ~ .slider__controls .slider__buton-cover:nth-child(1):hover .slider__button:after{
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2):hover .slider__button{
   background-color: #fff;
 }
 
-.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2):hover .slider__button:after{
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3):hover .slider__button{
   background-color: #fff;
 }
 
-.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3):hover .slider__button:after{
-  background-color: #fff;
-}
-
-.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4):hover .slider__button:after{
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4):hover .slider__button{
   background-color: #fff;
 }
 
@@ -246,26 +217,6 @@ body{
   .slider__button{
     width: 0.75rem;
     height: 0.75rem;
-  }
-  
-  .button_1:checked ~  .slider__controls .slider__buton-cover:nth-child(1) .slider__button:after{
-    width: 0.625rem;
-    height: 0.625rem;
-  }
-  
-  .button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2) .slider__button:after{
-    width: 0.625rem;
-    height: 0.625rem;
-  }
-  
-  .button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3) .slider__button:after{
-    width: 0.625rem;
-    height: 0.625rem;
-  }
-  
-  .button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4) .slider__button:after{
-    width: 0.625rem;
-    height: 0.625rem;
   }
 
   .slider__mems-cover {
